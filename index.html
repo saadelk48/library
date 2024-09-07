@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+
+</head>
+<body>
+    <header class="monster">
+        <h1>Library</h1>
+    </header>
+    <main>
+        <h2 class="monster">Your Books:</h2>
+        <div class="container" id="display"></div>
+        
+        <dialog class="monster">
+            <form action="">
+                <h2>Add a book</h2>
+                <hr>
+                <div class="flex">
+                    <label for="book_name">Book title</label>
+                    <input type="text" id="book_name" name="book_name">
+                    <p id="title_error" class="error"></p>
+                </div>
+                <div class="flex">
+                    <label for="author">author</label>
+                    <input type="text" id="author" name="author" required>
+                    <p id="authorError" class="error"></p>
+                </div>
+                <div class="flex">
+                    <label for="nb_pages">Number of pages</label>
+                    <input type="number" id="nb_pages" name="nb_pages" required>
+                    <p id="pagesError" class="error"></p>
+                </div>
+                <div>
+                    <input type="checkbox" id="status" name="status" required>
+                    <label for="status">I have read this book</label>
+                </div>
+                <hr>
+                <div class="options">
+                    <button class="state option" onclick="addBook()">Add Book</button>
+                    <button class="option delete">Cancel</button>
+                </div>
+            </form>
+        </dialog>
+        <button class="add monster"><svg class="plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>plus-circle</title><path d="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg></button>
+       
+  
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="book.js"></script>
+</body>
+</html>
